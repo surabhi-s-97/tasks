@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamstar</title>
+    <style>
+        #task{
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <p>
+                <input type="button" value="Show" id="bt" onclick="toggle(this)">
+            </p>
+            <div id="task" style="display: none;"> 
+            <h2>Publication Date</h2>
+                <p>#block-views-block-view-noticia-pbh-block-5 > div > div > div > div > div > div.views-field.views-field-nothing > span > span:nth-child(1) > font > font</p>
+            <h2>Object</h2>
+                <p>#block-views-block-view-noticia-pbh-block-5 > div > div > div > div > div > div.views-field.views-field-nothing > span > p:nth-child(6) > font > font</p>
+            <h2>Bidding Date</h2>
+                <p>#block-views-block-view-noticia-pbh-block-5 > div > div > div > div > div > div.views-field.views-field-nothing > span > span:nth-child(19) > font > font</p>
+            <h2>Links related to tender</h2>
+                <p><a href="https://prefeitura.pbh.gov.br/saude/licitacao/pregao-eletronico-151-2020">Link 1</a>
+                    <a href="http://portal6.pbh.gov.br/dom/iniciaEdicao.do?method=DetalheArtigo&pk=1235349">Link 2</a>
+                </p> 
+            </div>
+        </div>
+    </div>
+<script>
+function toggle(ele) {
+        var task = document.getElementById('task');
+        if (task.style.display == 'block') {
+            task.style.display = 'none';
+
+            document.getElementById(ele.id).value = 'Show';
+        }
+        else {
+            task.style.display = 'block';
+            document.getElementById(ele.id).value = 'Hide';
+        }
+    }
+</script>
+</body>
+</html>
